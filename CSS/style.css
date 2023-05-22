@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh; 
+   
+    
+}
+.calculator{
+    padding: 1rem;
+    width:100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+   
+    border-radius: .5rem;
+    background-color: #393337;
+}
+.viewValues{
+    
+    margin: 5rem 0 .5rem;
+    justify-content: right;
+    text-align: end;
+}
+.viewValues #output{
+    min-height: 1rem;
+    border-style:none ;
+    background-color: #393337;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    text-align: end;
+    width: 100%;
+    font-size: 2rem;
+}
+.calculator .buttons{
+    
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, .5fr);
+    gap: 1rem;
+    padding: .5rem ;
+   
+}
+.key,.operator,.clear,.backspace{
+    border-radius: 1.5rem;
+}
+.operator{
+    background-color: pink;
+}
